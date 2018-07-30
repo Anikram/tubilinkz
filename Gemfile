@@ -30,7 +30,7 @@ source 'https://rails-assets.org' do
 end
 
 group :production do
-  gem 'pg', '~> 0.19'
+  gem 'pg', '~> 0.21'
 end
 
 group :development, :test do
