@@ -24,13 +24,15 @@ gem 'loofah', '~> 2.2.1'
 gem 'nokogiri', '~> 1.8.2'
 gem 'rails-html-sanitizer', '~> 1.0.4'
 gem 'sprockets', '~> 3.7.2'
+gem 'capistrano', '3.8.1'
+
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
 
 group :production do
-  gem 'pg', '~> 0.21'
+  gem 'pg', '0.21'
 end
 
 group :development, :test do
@@ -42,7 +44,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'capistrano', '3.8.1'
+
   gem 'capistrano-rails', '~> 1.2'
   gem 'capistrano-passenger', '~> 0.2'
   gem 'capistrano-rbenv', '~> 2.1'
