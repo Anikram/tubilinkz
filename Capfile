@@ -29,10 +29,11 @@ install_plugin Capistrano::SCM::Git
 # Они содержат дополнительные таски, нужные для использования
 # соотв. инструментов (бандлера, пэссенджера и т. п.)
 # Эти таски автоматически встраиваются в поток выполнения капистрано.
-require 'capistrano/bundler'
-require 'capistrano/rbenv'
+
 require 'capistrano/rails'
 require 'capistrano/passenger'
+require 'capistrano/bundler'
+require 'capistrano/rbenv'
 
 # Параметры, нужные для работы плагина https://github.com/capistrano/rbenv
 # Тип установки rbenv на удаленной машине
