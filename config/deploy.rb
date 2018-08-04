@@ -4,7 +4,7 @@ lock '3.8.1'
 set :application, 'tubilinkz'
 set :repo_url, 'git@github.com:Anikram/tubilinkz.git'
 
-set :deploy_to, '/home/apps/tubilinkz'
+set :deploy_to, '/home/deploy/apps/tubilinkz'
 
 
 append :linked_files, 'config/database.yml', 'config/secrets.yml'
