@@ -5,7 +5,6 @@ set :application, 'tubilinkz'
 set :repo_url, 'git@github.com:Anikram/tubilinkz.git'
 
 set :deploy_to, '/home/deploy/apps/tubilinkz'
-set :stages, %w(production)
 
 
 append :linked_files, 'config/database.yml', 'config/secrets.yml'
