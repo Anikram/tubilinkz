@@ -33,8 +33,9 @@ append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bund
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
 
- Default value for default_env is {:production}
- set :default_env, { path: "/opt/ruby/bin:$PATH" }
+# Default value for default_env is {}
+# set :default_env, { path: "/opt/ruby/bin:$PATH" }
+set :default_stage, :production
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
