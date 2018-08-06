@@ -6,9 +6,11 @@ set :repo_url, 'git@github.com:Anikram/tubilinkz.git'
 
 set :deploy_to, '/home/deploy/apps/tubilinkz'
 
+set :bundle_env_variables, { rails_env: production}
+
 
 append :linked_files, 'config/database.yml', 'config/secrets.yml'
-append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads'
+append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads', '.bundle'
 
 
 # Default branch is :master
