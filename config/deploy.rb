@@ -5,6 +5,7 @@ set :application, 'tubilinkz'
 set :repo_url, 'git@github.com:Anikram/tubilinkz.git'
 
 set :deploy_to, '/home/deploy/apps/tubilinkz'
+set :stages, %w(production)
 
 
 append :linked_files, 'config/database.yml', 'config/secrets.yml'
@@ -35,7 +36,7 @@ append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bund
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
-set :default_stage, :production
+#set :default_stage, :production
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
