@@ -16,8 +16,6 @@
 # - database (где живет наш Postgres)
 # У нас все живет на одной машине.
 #
-set :stage, :production
-set :rails_env, 'production'
 server 'mymeet.website', user: 'deploy', roles: %w{app db web}
 
 

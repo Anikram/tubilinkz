@@ -34,6 +34,8 @@ require 'capistrano/rails'
 require 'capistrano/passenger'
 require 'capistrano/bundler'
 require 'capistrano/rbenv'
+require 'capistrano/rails/assets'
+require 'capistrano/rails/migrations'
 
 # Параметры, нужные для работы плагина https://github.com/capistrano/rbenv
 # Тип установки rbenv на удаленной машине
